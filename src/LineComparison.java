@@ -47,13 +47,15 @@ public class LineComparison {
         System.out.println("Line 2: (X3:"+ x3 +", Y3:"+ x3 +") and " +
                 "(X4:" + y4 + ", Y4:" + y4 +")");
 
-        System.out.println("length of line 1: " + length1);
-        System.out.println("length of line 2: " + length2);
+        System.out.println("length of line 1: " + l1);
+        System.out.println("length of line 2: " + l2);
 
-        if(l1.equals(l2)){
-            System.out.println("Both Lines Are Equal.");
-        }else {
-            System.out.println("Both Lines Are Not Equal.");
+        if(l1.compareTo(l2) == 0){
+            System.out.println("Both Lines are Equal.");
+        } else if (l1.compareTo(l2) > 0) {
+            System.out.println("Line 1 is Greater.");
+        } else if (l1.compareTo(l2) < 0) {
+            System.out.println("Line 2 is Greater.");
         }
     }
 }
